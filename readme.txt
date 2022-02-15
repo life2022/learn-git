@@ -39,3 +39,18 @@ git remote rm {命名的名称}
 git remote -v : 查看远程库信息
 git clone: 要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆[Git支持多种协议，包括https，但ssh协议速度最快。]
 
+
+分支:
+git checkout -b dev: 创建dev分支，然后切换到dev分支(加上-b参数表示创建并切换);
+相当于：
+git branch dev: 创建dev分支
+git checkout dev: 切换到dev分支
+
+git branch: 查看当前分支(列出所有分支，当前分支前面会标一个*号)
+
+dev 合并 master 分支的合并：
+先切换分支：git checkout master 之后合并dev到master: git merge dev (git merge命令用于合并指定分支到当前分支)
+合并完成后，就可以放心地删除dev分支了: git branch -d dev
+
+
+
