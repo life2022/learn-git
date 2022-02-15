@@ -26,3 +26,16 @@ git reset命令既可以回退版本，也可以把暂存区的修改回退到�
 
 git rm {文件名}: 删除文件
 
+远程仓库:
+1、关联一个远程库，使用命令 git remote add origin git@github.com:{username}/{仓库名}.git；
+2、关联一个远程库时必须给远程库指定一个名字，origin是默认习惯命名；
+3、关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+删除远程库:
+git remote rm {命名的名称}
+用删除远程库命令。使用前，建议先用git remote -v查看远程库信息
+
+git remote -v : 查看远程库信息
+git clone: 要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆[Git支持多种协议，包括https，但ssh协议速度最快。]
+
