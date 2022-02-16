@@ -54,3 +54,4 @@ dev 合并 master 分支的合并：
 
 
 
+Creating a new branch is quick AND simple
