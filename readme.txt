@@ -53,5 +53,8 @@ dev 合并 master 分支的合并：
 合并完成后，就可以放心地删除dev分支了: git branch -d dev
 
 
-
-Creating a new branch is quick & simple.
+git status也可以告诉我们冲突的文件
+用带参数的git log也可以看到分支的合并情况：git log --graph --pretty=oneline --abbrev-commit
+当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。
+用git log --graph命令可以看到分支合并图。
